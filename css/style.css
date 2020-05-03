@@ -797,13 +797,13 @@ section .wrapper {
 
   .menu__burger {
   display: inline;
-  font-size: 40px;
+  font-size: 50px;
   background-color: transparent;
   }
   .menu{
     display: none;
     position: absolute;
-    top: 79px;
+    top: 56px;
     left: 0;
     width: 100%;
   }
