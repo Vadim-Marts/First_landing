@@ -660,10 +660,10 @@ section .wrapper {
 
 
 /*we_do*/
-#we_do {
+#we_do, #marketing {
   background-color: #f2f2f2;
 }
-#we_do .wrapper {
+#we_do .wrapper, #advertising .wrapper, #marketing .wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -674,6 +674,8 @@ section .wrapper {
   margin-bottom: 3%;
 }
 .text_block {
+  display: flex;
+  flex-wrap: wrap;
   flex-basis: 470px;
   margin-bottom: 50px;
 }
@@ -734,7 +736,26 @@ section .wrapper {
 }
 
 
+/*advertising*/
+#advertising, #marketing {
+  padding-top: 10%; 
+}
 
+#advertising .text_block {
+  justify-content: flex-end;
+}
+#advertising .text_block h2:before {
+  content: none;
+}
+#advertising .text_block h2:after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 39px;
+  margin-left: 15px;
+  background-color: #fc635e;
+}
+/*marketing kit*/
 
 
 
@@ -755,14 +776,20 @@ section .wrapper {
     max-width: 350px;
   }
 
-  #we_do .wrapper {
+  #we_do .wrapper, #advertising .wrapper {
     justify-content: center;
   }
-  .text_block {
-    text-align: center;
+  .text_block, #advertising .text_block {
+    justify-content: center;
   }
   .text_block h2 {
     justify-content: center;
+  }
+  #advertising .text_block {
+    order: 1;
+  }
+  #advertising .icon_block {
+    order: 2;
   }
 }
 
