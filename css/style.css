@@ -776,7 +776,7 @@ section .wrapper {
     max-width: 350px;
   }
 
-  #we_do .wrapper, #advertising .wrapper {
+  #we_do .wrapper, #advertising .wrapper, #marketing .wrapper {
     justify-content: center;
   }
   .text_block, #advertising .text_block {
